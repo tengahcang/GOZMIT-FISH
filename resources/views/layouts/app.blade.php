@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="{{ Vite::asset('resources/img/Logo.svg') }}" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -29,8 +29,20 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+                    {{-- <ul class="navbar-nav flex-row flex-wrap">
+                        <li class="nav-item col-2 col-md-auto">Beranda</li>
+                        <li class="nav-item col-2 col-md-auto">Toko</li>
+                        <li class="nav-item col-2 col-md-auto">Blog</li>
+                        <li class="nav-item col-2 col-md-auto">Komunitas</li>
+                        <li class="nav-item col-2 col-md-auto">FAQ</li>
 
+                    </ul> --}}
+                    <ul class="navbar-nav flex-row flex-wrap">
+                        <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">Beranda</a></li>
+                        <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">Toko</a></li>
+                        <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">Blog</a></li>
+                        <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">Komunitas</a></li>
+                        <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">FAQ</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -51,9 +63,9 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                    <i class="bi-person-circle me-1"></i>
+                                    {{ Auth::user()->name." (".$data->role.")" }}
                                 </a>
-
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
