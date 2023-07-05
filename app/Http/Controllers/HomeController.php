@@ -37,6 +37,9 @@ class HomeController extends Controller
             return view('home',['data'=>$data]);
         }elseif ($role=="PEMBELI"){
             return view('home',['data'=>$data]);
+        }elseif ($role=="admin"){
+            return view('home',['data'=>$data]);
         }
+        
     }
 }

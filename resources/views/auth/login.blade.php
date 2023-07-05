@@ -72,7 +72,7 @@
             <button type="submit" class="btn btn-primary" style="width: 323px; height: 52px; left: 878px; top: 495px; position: absolute; background: #F79320; border-radius: 10px">
                 {{ __('Login') }}
             </button>
-            <div style="left: 923px; top: 559px; position: absolute; text-align: center"><span style="color: #767575; font-size: 17px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Tidak memiliki akun? </span><span style="color: #3E4FE5; font-size: 17px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Daftar</span></div>
+            <div style="left: 923px; top: 559px; position: absolute; text-align: center"><span style="color: #767575; font-size: 17px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Tidak memiliki akun? </span><a href="{{ route('register') }}" style="color: #3E4FE5; font-size: 17px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Daftar</a></div>
             <div style="left: 813px; top: 155px; position: absolute; color: #767575; font-size: 17px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Login sebagai Nelayan</div>
         </div>
     </form>

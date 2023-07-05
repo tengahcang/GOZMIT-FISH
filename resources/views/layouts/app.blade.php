@@ -38,8 +38,8 @@
 
                     </ul> --}}
                     <ul class="navbar-nav flex-row flex-wrap">
-                        <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">Beranda</a></li>
-                        <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">Toko</a></li>
+                        <li class="nav-item col-2 col-md-auto"><a href="{{ route('home') }}" class="nav-link">Beranda</a></li>
+                        <li class="nav-item col-2 col-md-auto"><a href="{{ route('toko.index') }}" class="nav-link">Toko</a></li>
                         <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">Blog</a></li>
                         <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">Komunitas</a></li>
                         <li class="nav-item col-2 col-md-auto"><a href="" class="nav-link">FAQ</a></li>
@@ -87,6 +87,32 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <footer>
+            <div class="container py-5 px-4">
+                <div style="width: 1440px; height: 626px; left: 0px; top: 3311px; position: absolute; background: #204283"></div>
+    <div style="width: 1662px; height: 322px; left: -141px; top: 3647px; position: absolute; background: rgba(255, 255, 255, 0.05)"></div>
+    <div style="width: 1452.50px; height: 382.36px; left: -2.50px; top: 3579.64px; position: absolute; background: rgba(255, 255, 255, 0.05)"></div>
+    <div style="width: 134.12px; height: 50px; left: 122px; top: 3429px; position: absolute">
+        <img src="{{ Vite::asset('resources/img/Frame.svg') }}" alt="">
+    </div>
+    <div style="width: 270px; left: 122px; top: 3543px; position: absolute; color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Lorem ipsum dolor sit amet consectetur diam ultricies leo etiam nibh tristique.</div>
+    <div style="width: 270px; height: 315px; left: 608px; top: 3462px; position: absolute">
+        <div style="width: 270px; left: 0px; top: 81px; position: absolute; color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Log Book</div>
+        <div style="width: 270px; left: 0px; top: 122px; position: absolute; color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Toko</div>
+        <div style="width: 270px; left: 0px; top: 163px; position: absolute; color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Hasil Penjualan</div>
+        <div style="width: 270px; left: 0px; top: 204px; position: absolute; color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Lokasi</div>
+        <div style="width: 270px; left: 0px; top: 245px; position: absolute; color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Komunitas</div>
+        <div style="width: 270px; left: 0px; top: 288px; position: absolute; color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Pengaturan</div>
+        <div style="width: 270px; left: 0px; top: 0px; position: absolute; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Links</div>
+    </div>
+    <div style="width: 270px; left: 973px; top: 3462px; position: absolute; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Contact</div>
+    <div style="width: 270px; left: 973px; top: 3543px; position: absolute; color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Lorem ipsum dolor sit amet consectetur diam ultricies leo etiam nibh tristique.</div>
+    <div style="width: 270px; left: 122px; top: 3650px; position: absolute; color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">odio feugiat vitae libero vestibu viverra elementum luctus.</div>
+    <div style="width: 716px; left: 362px; top: 3871px; position: absolute; text-align: center"><span style="color: white; font-size: 18px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Copyright 2023 </span><span style="color: white; font-size: 18px; font-family: Poppins; font-weight: 400; word-wrap: break-word">by GozmitTeam All Right Reserved.</span></div>
+    <div style="width: 1196px; height: 0px; left: 122px; top: 3834px; position: absolute; border: 0.50px white solid"></div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
